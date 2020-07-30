@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10sp"
+    android:background="@color/color_PureWhite">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/symptom_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        app:lottie_rawRes="@raw/wash_hands"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+            android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/symptom_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Heading"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/symptom_image"/>
+
+    <TextView
+            android:id="@+id/symptom_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="details"
+        android:textSize="14sp"
+        android:layout_below="@+id/symptom_heading"
+        android:layout_toEndOf="@+id/symptom_image"
+        android:layout_marginStart="8dp"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

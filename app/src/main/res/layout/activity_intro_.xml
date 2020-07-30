@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro_Activity">
+    <LinearLayout
+        android:id="@+id/intro_skip"
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp">
+        <TextView
+            android:id="@+id/skip"
+            android:text="Skip"
+            android:textSize="20sp"
+            android:layout_marginLeft="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/intro_skip"
+        android:id="@+id/intro_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+
+        android:id="@+id/intro_linearLayout"
+        android:layout_below="@+id/intro_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/intro_nextCard"
+        android:layout_below="@+id/intro_viewPager"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="150dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/intro_next"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Next"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:textColor="@color/active1"
+            android:paddingTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:drawableTint="@color/active1" />
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
